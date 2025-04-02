@@ -21,12 +21,81 @@
             </div>
         </div>
         <nav class="main-nav">
-            <div class="logo">
-                <img width="512" height="512" src="https://waapickles.com/wp-content/uploads/2024/07/cropped-Waa-logo-English-Recovered.png" class="custom-logo" alt="cropped Waa logo English Recovered" decoding="async">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-                <button><i class="fas fa-search"></i></button>
+            <div class="container">
+                <div class="logo">
+                    <img width="512" height="512" src="https://waapickles.com/wp-content/uploads/2024/07/cropped-Waa-logo-English-Recovered.png" class="custom-logo" alt="cropped Waa logo English Recovered" decoding="async">
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="col col-7 col-header-mobile right">
+                    <div class="header-block search-block-mobile search-sidebar">
+                        <button><i class="icon-rt-loupe" aria-hidden="true"></i></button>
+                        <div class="search-wrapper" id="_mobile_search_block_">
+                            <a href="#" class="side-close-icon" title="Close"><i class="icon-rt-close-outline"></i></a>
+                            <div class="search-box">
+                                <form method="get" class="search-form searchbox" action="https://waapickles.com/" role="search">
+                                    <div class="input-wrapper">
+                                        <input type="hidden" name="post_type" value="product">
+                                        <input type="text" name="s" class="ajax_search search-field grano_ajax_search" placeholder="Search products here..." autocomplete="off">
+                                        <span class="clear_search"><i class="icon-rt-close-outline"></i></span>
+                                        <button type="submit" class="search-submit"><i class="icon-rt-loupe" aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                                <div class="search_content">
+                                    <div class="search-keywords-list" style="display: none;">
+                                        <p>Popular searches :</p>
+                                        <ul class="header-search-popular">
+                                            <li><a href="https://waapickles.com?post_type=product&s=Fish">Fish</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Chicken%20Gongura%20Pickle">Chicken Gongura Pickle</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Prawns%20Pickle">Prawns Pickle</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Crab%20Pickle">Crab Pickle</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Gongura%20Pandu%20Mirchi%20Pickle">Gongura Pandu Mirchi Pickle</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Gongura">Gongura</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Chicken">Chicken</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Mutton">Mutton</a></li>
+                                            <li><a href="https://waapickles.com?post_type=product&s=Prawns">Prawns</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="search_result d-none"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="_mobile_header_account_">
+                        <div class="header-block header-account-block account-both-inline">
+                            <a href="https://waapickles.com/my-account/" class="et-menu-account-btn icon">
+                                <i class="icon-rt-person-circle-outline" aria-hidden="true"></i>
+                                <div class="icon-text">
+                                    <p>Register</p>
+                                    <p>Or Sign In</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="_mobile_cart_">
+                        <div class="header-block cart-block cart-off-canvas">
+                            <div class="header-cart minicart-side">
+                                <a href="https://waapickles.com/cart/" class="dropdown-toggle cart-contents">
+                                    <i class="icon-rt-bag" aria-hidden="true"></i>
+                                    <span class="cart-count">0</span>
+                                </a>
+                                <nav id="cart-side" class="">
+                                    <div class="cart-side-navbar">
+                                        <div class="cart-side-navbar-inner">
+                                            <div class="popup-cart-title">Your Cart</div>
+                                            <a href="#" class="side-close-icon" title="Close"><i class="icon-rt-close-outline"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="cart-side-content">
+                                        <div class="widget_shopping_cart_content"></div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -39,10 +108,6 @@
                 <li><a href="#contact">Contact Us</a></li>
                 <li class="contact-info"><a href="tel:+919885267678"><i class="fas fa-phone"></i> +91 9885267678</a></li>
             </ul>
-            <div class="nav-icons">
-                <a href="#" class="profile-icon"><i class="fas fa-user"></i></a>
-                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
-            </div>
         </nav>
     </header>
 
@@ -134,73 +199,6 @@
                     <a href="https://waapickles.com/">
                         <img width="512" height="512" src="https://waapickles.com/wp-content/uploads/2024/07/cropped-Waa-logo-English-Recovered.png" class="custom-logo" alt="cropped Waa logo English Recovered" decoding="async">
                     </a>
-                </div>
-            </div>
-            <div class="col col-7 col-header-mobile right">
-                <div class="header-block search-block-mobile search-sidebar">
-                    <button><i class="fas fa-search" aria-hidden="true"></i></button>
-                    <div class="search-wrapper" id="_mobile_search_block_">
-                        <a href="#" class="side-close-icon" title="Close"><i class="fas fa-times"></i></a>
-                        <div class="search-box">
-                            <form method="get" class="search-form searchbox" action="https://waapickles.com/" role="search">
-                                <div class="input-wrapper">
-                                    <input type="hidden" name="post_type" value="product">
-                                    <input type="text" name="s" class="ajax_search search-field grano_ajax_search" placeholder="Search products here..." autocomplete="off">
-                                    <span class="clear_search"><i class="fas fa-times"></i></span>
-                                    <button type="submit" class="search-submit"><i class="fas fa-search" aria-hidden="true"></i></button>
-                                </div>
-                            </form>
-                            <div class="search_content">
-                                <div class="search-keywords-list">
-                                    <p>Popular searches :</p>
-                                    <ul class="header-search-popular">
-                                        <li><a href="https://waapickles.com?post_type=product&s=Fish">Fish</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Chicken%20Gongura%20Pickle">Chicken Gongura Pickle</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Prawns%20Pickle">Prawns Pickle</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Crab%20Pickle">Crab Pickle</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Gongura%20Pandu%20Mirchi%20Pickle">Gongura Pandu Mirchi Pickle</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Gongura">Gongura</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Chicken">Chicken</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Mutton">Mutton</a></li>
-                                        <li><a href="https://waapickles.com?post_type=product&s=Prawns">Prawns</a></li>
-                                    </ul>
-                                </div>
-                                <div class="search_result d-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="_mobile_header_account_">
-                    <div class="header-block header-account-block account-both-inline">
-                        <a href="https://waapickles.com/my-account/" class="et-menu-account-btn icon">
-                            <i class="fas fa-user-circle" aria-hidden="true"></i>
-                            <div class="icon-text">
-                                <p>Register</p>
-                                <p>Or Sign In</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div id="_mobile_cart_">
-                    <div class="header-block cart-block cart-off-canvas">
-                        <div class="header-cart minicart-side">
-                            <a href="https://waapickles.com/cart/" class="dropdown-toggle cart-contents">
-                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
-                                <span class="cart-count">0</span>
-                            </a>
-                            <nav id="cart-side" class="">
-                                <div class="cart-side-navbar">
-                                    <div class="cart-side-navbar-inner">
-                                        <div class="popup-cart-title">Your Cart</div>
-                                        <a href="#" class="side-close-icon" title="Close"><i class="fas fa-times"></i></a>
-                                    </div>
-                                </div>
-                                <div class="cart-side-content">
-                                    <div class="widget_shopping_cart_content"></div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
