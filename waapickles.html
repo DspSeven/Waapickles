@@ -6,6 +6,7 @@
     <title>WAA Pickles - The Perfect Beginning of Every Meal!</title>
     <link rel="stylesheet" href="waapickles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -24,6 +25,10 @@
             <div class="logo">
                 <img src="logo.png" alt="WAA Pickles Logo">
             </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -35,89 +40,186 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="nav-icons">
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="profile-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to WAA Pickles</h1>
-            <h2>The Perfect Beginning of Every Meal!</h2>
-            <p>We believe that every meal deserves a touch of extraordinary flavor. Our pickles are crafted to elevate your dining experience with an unforgettable burst of taste.</p>
+    <!-- Login/Register Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+            </form>
         </div>
-    </section>
+    </div>
 
-    <!-- Featured Products Section -->
+    <!-- Rest of the existing sections... -->
+    // ... existing code ...
+
+    <!-- Update Featured Products Section with Slider -->
     <section class="featured-products">
         <h2>Best Seller</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="crab-pickle.jpg" alt="Crab Pickle">
-                <h3>Crab Pickle</h3>
-                <div class="price">₹481.25 – ₹1,925.00</div>
-                <button class="add-to-cart">Add To Cart</button>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="crab-pickle.jpg" alt="Crab Pickle">
+                        <h3>Crab Pickle</h3>
+                        <div class="price">₹481.25 – ₹1,925.00</div>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Add more slides... -->
             </div>
-            <div class="product-card">
-                <img src="prawns-pickle.jpg" alt="Prawns Gongura Pickle">
-                <h3>Prawns Gongura Pickle</h3>
-                <div class="price">₹437.50 – ₹1,750.00</div>
-                <button class="add-to-cart">Add To Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="mutton-pickle.jpg" alt="Mutton Pickle">
-                <h3>Mutton Pickle</h3>
-                <div class="price">₹495.00 – ₹1,940.00</div>
-                <button class="add-to-cart">Add To Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="chicken-pickle.jpg" alt="Chicken Pickle">
-                <h3>Chicken Pickle</h3>
-                <div class="price">₹312.50 – ₹1,250.00</div>
-                <button class="add-to-cart">Add To Cart</button>
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>Crafted with Care and Quality</h2>
-        <p>At our core, we believe in authenticity and natural goodness. Every ingredient we use is freshly sourced and hand-picked, ensuring the highest quality for each bite. Our delicious pickles are a testament to the dedication, hard work, and commitment of our farmers to their land. Each jar tells a unique story, bringing the goodness of nature to your table.</p>
+    <!-- Update Non-Veg Section with Slider -->
+    <section class="non-veg-section">
+        <h2>Non-Veg Pickles</h2>
+        <div class="swiper non-veg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="fish-pickle.jpg" alt="Fish Pickle">
+                        <h3>Fish Pickle</h3>
+                        <div class="price">₹300.00 – ₹1,200.00</div>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Add more slides... -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Location</h3>
-                <p>Rd. No:1, Ambedkar Nagar, Hill View Doctors Colony, Seethammadara, Visakhapatnam, Andhra Pradesh -530013</p>
-                <p>Email: info@waapickles.com</p>
-                <p>Phone: +91 9885267678</p>
+    <!-- Update Veg Section with Slider -->
+    <section class="veg-section">
+        <h2>Veg Pickles</h2>
+        <div class="swiper veg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="gongura-pickle.jpg" alt="Gongura Pickle">
+                        <h3>Gongura Pickle</h3>
+                        <div class="price">₹176.40 – ₹705.58</div>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Add more slides... -->
             </div>
-            <div class="footer-section">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li><a href="#shop">Shop Now</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#track">Track Order</a></li>
-                    <li><a href="#terms">Terms and Conditions</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Product Categories</h3>
-                <ul>
-                    <li><a href="#non-veg">Non-Veg Pickles</a></li>
-                    <li><a href="#veg">Veg Pickles</a></li>
-                    <li><a href="#powders">Powders</a></li>
-                </ul>
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="footer-bottom">
-            <p>Waa Pickles © 2024. Website Developed By Beyond Technologies.</p>
+    </section>
+
+    <!-- Update Powders Section with Slider -->
+    <section class="powders-section">
+        <h2>Powders</h2>
+        <div class="swiper powders-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <img src="kandi-podi.jpg" alt="Kandi Podi">
+                        <h3>Kandi Podi</h3>
+                        <div class="price">₹205.50 – ₹822.00</div>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Add more slides... -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Update Instagram Section with Slider -->
+    <section class="instagram-section">
+        <h2>Follow On Instagram</h2>
+        <div class="swiper instagram-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="instagram-item">
+                        <img src="chicken-gongura.jpg" alt="Chicken Gongura">
+                    </div>
+                </div>
+                <!-- Add more slides... -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <a href="#" class="instagram-link">Visit Instagram</a>
+    </section>
+
+    <!-- Rest of the existing sections... -->
+    // ... existing code ...
+
+    <!-- Add Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize all sliders
+        const sliders = document.querySelectorAll('.swiper');
+        sliders.forEach(slider => {
+            new Swiper(slider, {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: slider.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: slider.querySelector('.swiper-button-next'),
+                    prevEl: slider.querySelector('.swiper-button-prev'),
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                }
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('loginModal');
+        const profileIcon = document.querySelector('.profile-icon');
+        const closeBtn = document.querySelector('.close');
+
+        profileIcon.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
-</html> 
+</html>
