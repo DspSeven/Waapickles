@@ -766,7 +766,9 @@ footer {
     .custom-logo-mobile {
         max-width: 120px;
     }
-  .swiper non-veg-slider{
+  
+} 
+.swiper non-veg-slider{
     disply:flex;
      width: 100%;
      max-width: 800px;
@@ -798,5 +800,6 @@ footer {
     position: relative;
     transition-property: transform;
 }
-  
-} 
+  .non-veg{
+    display:flex;
+  }
