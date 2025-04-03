@@ -803,3 +803,6 @@ footer {
   .non-veg{
     display:flex;
   }
+.veg-pickle{
+  display:flex;
+}
