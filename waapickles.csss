@@ -809,6 +809,17 @@ footer {
 .veg{
   display:flex;
 }
+.powder{
+  display:flex;
+}
+.swiper powder{
+  disply:flex;
+     width: 100%;
+     max-width: 500px;
+     margin: 0 auto;
+     position: relative;
+     overflow: hidden;
+}
 .swiper veg-slider{
   disply:flex;
      width: 100%;
