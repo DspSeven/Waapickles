@@ -767,7 +767,8 @@ footer {
         max-width: 120px;
     }
   
-} 
+}
+
 .swiper non-veg-slider{
     disply:flex;
      width: 100%;
@@ -828,6 +829,6 @@ footer {
      overflow: hidden;
 }
 .main{
-  width:85%;
+  width:100%;
   height:100%;
 }
